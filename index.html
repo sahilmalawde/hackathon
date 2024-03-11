@@ -27,13 +27,28 @@
                 <div class="toggle-panel toggle-right">
                     <h1>Hello, Friend!</h1>
                     <p>If not registerd, Signup to continue</p>
-                    <button class="hidden" id="register">Sign Up</button>
+                    <button class="btn" onclick="openNewForm()" id="register">Sign Up</button>
                 </div>
+            </div>
+            <div class="new-signup">
+                <form>
+                    <h1>Sign Up</h1>
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button>Login</button>
+                </form>   
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function openNewForm() {
+    document.querySelector('.signup').style.display = 'none';
+    document.querySelector('.new-signup').style.display = 'block';
+  }
+    </script>
 </body>
 
 </html>
