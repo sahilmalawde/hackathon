@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 187, 187);
+}
+
+.logo a{
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo pre{
+    margin-top: 10px;
+    margin-left: 680px;
+    font-size: 0.9rem;
+}
+
+.logo span{
+    color: red;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    height: 50px;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.menu p{
+    margin-left: 200px;
+}
+
+.main{
+    background-color: rgb(193, 187, 187);
+    height: 100vh;
+}
+
+.main img{
+
+}
