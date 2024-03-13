@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #efffde;
+    color: #008080;
 }
 
 .logo{
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
-    background-color: rgb(193, 187, 187);
+}
+
+.ri-book-fill{
+    margin-left: 80px;
 }
 
 .logo a{
-    margin-left: 80px;
+    /* margin-left: 80px; */
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .logo pre{
@@ -36,15 +44,437 @@
     margin-left: 80px;
 }
 
-.menu p{
-    margin-left: 200px;
+.menu a{
+    text-decoration: none;
+}
+
+.profile{
+    margin-left: 750px;
 }
 
 .main{
-    background-color: rgb(193, 187, 187);
-    height: 100vh;
+    height: 65vh;
+    display: flex;  
 }
 
-.main img{
-
+.main button{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
 }
+
+.main pre{
+    margin-top: 150px;
+    margin-left: 80px;
+    font-size: 1rem;
+}
+
+.main span{
+    font-size: 3rem;
+    font-family: "Merriweather", serif;
+    
+}
+
+.main button{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+
+.book1{
+    margin-left: 240px;
+    margin-top: 100px;
+    height: 300px;
+    width: 200px;
+    margin-bottom: 400px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+}
+
+.book2{
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 400px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+}
+
+.book3{
+    margin-left: 50px;
+    margin-top: 100px;
+    height: 300px;
+    width: 200px;
+    margin-bottom: 400px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+}
+
+.touch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 5px;
+}
+
+.fa-solid{
+    font-size: 2.5rem;
+}
+
+.touch p{
+    font-size: 1.8rem;
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 5px;
+}
+
+.ri-customer-service-2-fill{
+    font-size: 2.5rem;
+}
+
+.support p{
+    font-size: 1.8rem;
+}
+
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.fbook{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    grid-row: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.fbook img{
+    height: 210px;
+    overflow: hidden;
+}
+
+.b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b1 a{
+    color: black;
+    background-color: white;
+}
+
+.b1 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b2{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b2 a{
+    color: black;
+    background-color: white;
+}
+
+.b2 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b3{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b3 a{
+    color: black;
+    background-color: white;
+}
+
+.b3 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b4{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b4 a{
+    color: black;
+    background-color: white;
+}
+
+.b4 img{
+    width: 180px;
+}
+
+.b4 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.row2{
+    display: flex;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    grid-row: auto; 
+}
+
+.row2 img{
+    height: 210px;
+    overflow: hidden;
+}
+
+.b5{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b5 a{
+    color: black;
+    background-color: white;
+}
+
+.b5 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b6{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b6 a{
+    color: black;
+    background-color: white;
+}
+
+.b6 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b7{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b7 a{
+    color: black;
+    background-color: white;
+}
+
+.b7 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b8{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b8 a{
+    color: black;
+    background-color: white;
+}
+
+.b8 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.b9{
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.b9 a{
+    color: black;
+    background-color: white;
+}
+
+.b9 button{
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sub{
+    margin-top: 80px;
+    position: relative;
+}
+.sub img{
+    height: 400px;
+    width: 100%;
+}
+
+.sub pre{
+    position: absolute;
+    top: 0;
+    color: white;
+    background: transparent;
+    margin-top: 100px;
+    margin-left: 450px;
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+}
+
+.input{
+    position: absolute;
+    top: 0;
+    margin-top: 200px;
+    margin-left: 430px;
+    
+}
+
+.input input{
+    color: black;
+    background: white;
+    height: 30px;
+    width: 300px;
+    padding: 20px;
+}
+
+.sbtn{
+    position: absolute;
+    top: 0;
+    margin-top: 280px;
+    margin-left: 510px;
+}
+
+.sbtn button{
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
