@@ -36,6 +36,7 @@ document.getElementById("register").addEventListener('click',(e) =>{
 
     });
     alert('user created')
+    window.location.href = "index.html"
     // ...
   })
   .catch((error) => {
@@ -58,7 +59,7 @@ document.getElementById("login").addEventListener('click',(e) =>{
     // Signed up 
     const user = userCredential.user;
     alert('logged in')
-    window.location.href = "intropage.html"
+    window.location.href = "ui.html"
     // ...
   })
   .catch((error) => {
