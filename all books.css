@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(228, 247, 255);
+}
+input {
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  background-color: white;
+  width: 500px;
+  
+}
+input:hover {
+  border: #eec093;
+}
+.allbooks {
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  background-color: rgb(228, 247, 255, 0.5);
+}
+
+.main {
+  display: flex;
+  margin-top: 7%;
+  z-index: 1;
+  
+}
+.books {
+  display: inline-block;
+  width: 70%;
+  box-sizing: border-box;
+  margin-left: 30%;
+}
+.main .categories li {
+  list-style-type: none;
+}
+.categories {
+  display: flex;
+  width: 20%; /* Adjust width as needed */
+  background-color: transparent;
+  position: fixed;
+  text-align: center;
+  border-radius: 20px;
+  display: inline;
+  margin: 5%;
+}
+.categories a {
+  text-decoration: none;
+  color: inherit;
+}
+.categories ul {
+  margin: 10px;
+}
+img {
+  width: 15vw;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.book_img {
+  display: flex;
+  align-items: center;
+  flex: 0;
+}
+.issue{
+  flex: 1;
+  
+}
+.issue button{
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  
+}
+.bookplace {
+  display: flex;
+  margin: 10px;
+  background-color: #eec093;
+  height: fit-content;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 1s ease;
+}
+.bookplace:hover {
+  transform: scale(1.05);
+  margin: 0;
+
+    
+}
+.book_info {
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  text-align: center;
+}
+
+.name h1{
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
