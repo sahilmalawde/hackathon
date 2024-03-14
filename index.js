@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-import { getDatabase,set,ref } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+import { getDatabase,set,ref,onValue } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,6 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase();
 const auth = getAuth(app);
+var currentemail;
 document.getElementById("register").addEventListener('click',(e) =>{
   e.preventDefault()
   var email = document.getElementById('email1').value 
@@ -35,8 +36,8 @@ document.getElementById("register").addEventListener('click',(e) =>{
       email: email,
 
     });
+    
     alert('user created')
-    window.location.href = "index.html"
     // ...
   })
   .catch((error) => {
@@ -57,17 +58,26 @@ document.getElementById("login").addEventListener('click',(e) =>{
     , password_login)
   .then((userCredential) => {
     // Signed up 
-    const user = userCredential.user;
+    const user = auth.currentUser
+    // console.log(user.uid)
+    if(email_login == "admin2024@gmail.com"){
+      window.location.href="book.html"
+    }
     alert('logged in')
-    window.location.href = "ui.html"
+    // sessionStorage.setItem("cur_email",email_login)
+    // user_ref = database.ref("users/" + )
+    // window.location.href = "book.html"
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     alert(errorMessage);
-    // ..
-  });
+    // ..
+  });
 })
+
+
+
 
 
