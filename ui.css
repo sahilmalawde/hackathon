@@ -3,14 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #efffde;
-    color: #008080;
+    /* background-color: rgb(230, 230, 230); */
+    background-color: rgb(228, 247, 255);
+}
+
+
+button{
+    background-color: transparent;
+}
+
+button:hover{
+    background-color: transparent;
+    color: black;
 }
 
 .logo{
     height: 60px;
     display: flex;
     align-items: center;
+
 }
 
 .ri-book-fill{
@@ -27,7 +38,6 @@
 
 .logo pre{
     margin-top: 10px;
-    margin-left: 680px;
     font-size: 0.9rem;
 }
 
@@ -35,21 +45,49 @@
     color: red;
 }
 
+.logo input{
+    margin-left: 140px;
+    height: 38px;
+    width: 800px;
+    padding: 10px;
+    background-color: white;  
+    border-radius: 10px;
+}
+
+.search-icon{
+    height: 38px;
+    width: 40px;
+    font-size: .8rem;
+    background-color: #eec093;
+}
+
+/* .search-icon .fa-solid{
+    height: 20px;
+    width: 10px;
+} */
+
 .menu{
     display: flex;
-    gap: 40px;
+    margin-top: 10px;
     font-size: 20px;
-    height: 50px;
-    align-items: center;
-    margin-left: 80px;
+    height: 70px;
+    background-color: white;
+    justify-content: space-evenly;
 }
 
 .menu a{
+    margin-top: 20px;
+    margin-left: 52px;
     text-decoration: none;
-}
+    background-color: white;
+    color: black;
+}   
 
-.profile{
-    margin-left: 750px;
+.profile {
+    margin-left: 720px;
+    margin-top: 15px;
+    background-color: grey;
+    color: gray;
 }
 
 .main{
@@ -89,6 +127,7 @@
     width: 200px;
     margin-bottom: 400px;
     box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    
 }
 
 .book2{
@@ -114,6 +153,7 @@
     align-items: center;
     justify-content: center;
     gap: 350px;
+    margin-top: 40px;
 }
 
 .touch{
@@ -171,7 +211,7 @@
 
 .b1{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -180,25 +220,46 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b1 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b1:hover img {
+  transform: scale(1.6); 
+}
+
 
 .b1 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b1 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+.b1 button:hover{
+    background-color: black;
+    color: white;
 }
 
 .b2{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -207,25 +268,47 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b2 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b2:hover img {
+  transform: scale(1.6); 
+}
+
 
 .b2 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b2 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+.b2 button:hover{
+    background-color: black;
+    color: white;
+}
+
 
 .b3{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -234,25 +317,47 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b3 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b3:hover img {
+  transform: scale(1.6); 
+}
+
 
 .b3 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b3 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+.b3 button:hover{
+    background-color: black;
+    color: white;
+}
+
 
 .b4{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -261,11 +366,27 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b4 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b4:hover img {
+  transform: scale(1.6); 
+}
+
+
 
 .b4 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b4 img{
@@ -274,12 +395,19 @@
 
 .b4 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+.b4 button:hover{
+    background-color: black;
+    color: white;
+}
+
 
 .row2{
     display: flex;
@@ -296,7 +424,7 @@
 
 .b5{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -305,25 +433,48 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b5 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b5:hover img {
+  transform: scale(1.6); 
+}
+
+
 
 .b5 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b5 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+.b5 button:hover{
+    background-color: black;
+    color: white;
+}
+
 
 .b6{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -332,25 +483,47 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b6 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b6:hover img {
+  transform: scale(1.6); 
+}
+
+
 
 .b6 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b6 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+.b6 button:hover{
+    background-color: black;
+    color: white;
 }
 
 .b7{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -359,25 +532,48 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b7 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b7:hover img {
+  transform: scale(1.6); 
+}
+
+
 
 .b7 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b7 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+.b7 button:hover{
+    background-color: black;
+    color: white;
+}
+
 
 .b8{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -386,25 +582,47 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b8 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b8:hover img {
+  transform: scale(1.6); 
+}
+
+
 
 .b8 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b8 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+.b8 button:hover{
+    background-color: black;
+    color: white;
 }
 
 .b9{
     /* border: 2px solid black; */
-    background-color: white;
+    background-color: #eec093;
     color: black;
     height: 300px;
     width: 300px;
@@ -413,21 +631,43 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(55, 54, 54);
+    position: relative;
 }
+
+
+.b9 img{
+    transition: transform 0.5s ease-out;
+    border-radius: 10px;
+
+}
+
+
+.b9:hover img {
+  transform: scale(1.6); 
+}
+
 
 .b9 a{
     color: black;
-    background-color: white;
+    background-color: #eec093;
 }
 
 .b9 button{
     margin-top: 20px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     color: black;
     background-color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
+
+.b9 button:hover{
+    background-color: black;
+    color: white;
+}
+
 
 .sub{
     margin-top: 80px;
@@ -477,4 +717,9 @@
     width: 150px;
     cursor: pointer;
 }
+
+
+
+
+
 
