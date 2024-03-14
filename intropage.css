@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+.main{
+    display: flex;
+    
+}
+#photo img{
+    width: 1100px;
+    height: 700px;
+    
+    /* background-image: url(COEP-photo.png); */
+    background-repeat: no-repeat;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background: linear-gradient(pink,blue);
+    padding-top: 350px ;
+    padding: 50px;
+    color: white;
+}
+.start{
+    margin: 30px;
+    background-color: violet;
+    color: white;
+    font-weight: bold;
+    border:none;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+}
+.start:hover{
+    background-color: aliceblue;
+    color:palevioletred;
+}
