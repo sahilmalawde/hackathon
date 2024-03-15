@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venue-Booking</title>
-    <link rel="stylesheet" href="intropage.css">
-    <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>books4coep</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ffcc00, #ff6699, #9966ff, #0099ff, #00ffcc);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    /* Animation */
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animated {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
 </head>
-<body>
-    <div class="main">
-        <div id="photo">
-            <img src="COEP-photo.png" alt="COEP-photo">
-        </div>
-        <div class="text">
-            <div class="intro"><h1>Welcome to Venue Booking</h1>
-            <p>This is the perfect solution for all your booking problems</p></div>
-            <a href="login.html"><button class="start" >Get Started</button></a>
-        </div>
-    </div>
-    
+<body onclick="location.href='login.html';">
+  <div class="container animated">
+    <h1>books4coep</h1>
+    <h2>modernize your library experience today</h2>
+  </div>
 </body>
 </html>
